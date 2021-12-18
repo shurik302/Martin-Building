@@ -1,0 +1,15 @@
+:root{
+    --orange:rgb(213, 101, 27);
+    --grey:#242424;
+    --white:rgb(255, 255, 255);
+    --l_grey:rgb(127,127,127);
+    --d_orange:rgb(133, 65, 20);
+    --black:#000000;
+}   
+
+@font-face {
+    font-family: Butler_Black;
+    src: url(../Butler/Butler_Black.otf);
+    font-style: normal;
+    font-weight: normal;
+}

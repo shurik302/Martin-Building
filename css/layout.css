@@ -1,0 +1,235 @@
+@import 'variabiles.css';
+
+.bcimagehead{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../image/third_build.jpg);
+    background-size: cover;
+    /* background-position:30% 30%; */
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image_header_up {
+    height: 850px;
+    width: 730px;
+    position: absolute;
+    top: 80px;
+    left: 800px;
+}
+.image_header_up img{
+    width: 100%;
+    height: 100%;
+}
+
+.small_text{
+    color: var(--white);
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    font-size: 50px;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    transform: translate3d(0px, -2.52777px, 0px);
+}
+
+.bigText{
+    color: var(--white);
+    position: absolute;
+    font-size: 130px;
+    font-weight: 600;
+    top: 250px;
+    left: 200px;
+    z-index: 1;
+    width: fit-content;
+    /* transition: 2s; */
+}
+
+/* sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px, 
+*/
+
+@media (max-width:1530px){
+    .image_header_up {
+        height: 850px;
+        width: 600px;
+        position: absolute;
+        top: 80px;
+        left: 800px;
+    }
+}
+
+
+@media (max-width:1400px) {
+    .bigText{
+        left: 150px;
+        font-size: 100px;
+}
+    .image_header_up {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width:992px) {
+    .bigText{
+        left: 150px;
+        font-size: 80px;
+}
+}
+@media (max-width:768px) {
+    .bcimagehead{
+        width: 100%;
+
+    }
+    .bigText{
+        left: 150px;
+        font-size: 60px;
+}
+.small_text{
+    font-size: 40px;
+}
+}
+
+@media (max-width:576px) {
+    .small_text{
+        font-size: 20px;
+    }
+    .bigText{
+        left: 50px;
+        font-size: 45px;
+}
+}
+
+@media (max-width:320px) {
+    .small_text{
+        left: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+    .bigText{
+        left: 0;
+        font-size: 30px;
+}
+}
+
+
+
+
+
+
+/* NAVIG */
+
+.nav{
+    position: relative;
+    
+}
+
+.icon_nav{
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange);
+    position: fixed;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 2;
+}
+
+
+
+.line{
+  /*   position: absolute; */
+    width: 60px;
+    height: 4px;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: all 0.5s;
+    /* margin: 17px 10px; */
+}
+
+.first_line_transform{
+    margin-bottom: -14.5px;
+    transform: rotate(45deg);
+}
+
+.third_line_transform{
+    margin-top: -14.5px;
+    transform: rotate(-45deg);
+}
+
+.second_line{
+    position: fixed;
+}
+
+.second_line_transform{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.menu{
+    width: 50%;
+    height: 100%;
+    border: 5px solid red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: -100%;
+    z-index: 1;
+    transform: translate3d(0px, 101%, 0px);
+}
+
+.menu_vis{
+    
+    bottom: 0;
+    transition: all 1s linear;
+    transform: translate3d(0px, 0%, 0px);
+    background-color: black;
+}
+.testol{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.test1,
+.test2,
+.test3{
+    top: 20%;
+    left: 70%;
+    transition:  1s linear;
+    font-size: 60px;
+    color:green;
+    opacity: 0;
+    transform: translateY(100px) rotate(5deg);
+    transition:0.5s ;
+    display: flex;
+    flex-direction: column;
+}
+
+.test_vis{
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg);
+    transition:  1s linear;
+}
+
+.scroll{
+    /* transition: ease all 0.5s; */
+}
